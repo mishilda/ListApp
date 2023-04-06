@@ -1,20 +1,20 @@
 package com.example.tutorialproject.domain
 
-class ShopItemUseCases {
+class ShopItemUseCases(private val shopListRepository: ShopListRepository) {
 
     fun AddShopItem(shopItem: ShopItem) {
-        TODO()
+        shopListRepository.addShopItem(shopItem)
     }
 
     fun getShopItem(shopItemId: Int): ShopItem {
-        TODO()
+        return shopListRepository.getShopItem(shopItemId)
     }
 
-    fun updateShopItem(item: ShopItem): ShopItem {
-        TODO()
+    fun editShopItem(shopItem: ShopItem) {
+        shopListRepository.editShopItem(shopItem)
     }
 
-    fun deleteShopItem(item: ShopItem) {
-        TODO()
+    fun deleteShopItem(shopItem: ShopItem) {
+        shopListRepository.deleteShopItem(shopItem)
     }
 }
