@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TutorialProject</string>
+    <string name="error_input_name">No valid name</string>
+    <string name="error_input_count">No valid count</string>
 </resources>
